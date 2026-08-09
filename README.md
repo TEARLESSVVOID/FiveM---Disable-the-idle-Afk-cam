@@ -38,7 +38,7 @@ Edit `config.lua`:
 | Key | Default | Description |
 |-----|---------|-------------|
 | `Config.loopEnabled` | `true` | Use the periodic loop (more reliable) |
-| `Config.loopInterval` | `30000` | Loop interval in ms (30s is plenty) |
+| `Config.loopInterval` | `25000` | Loop interval in ms (25s is plenty) |
 | `Config.initialDelay` | `1000` | Initial wait in ms before first call |
 | `Config.enableCommand` | `true` | Enable the per-player toggle command |
 | `Config.commandName` | `'noafk'` | Toggle command name |
@@ -53,7 +53,7 @@ Edit `config.lua`:
 
 ## Performance
 
-- The loop calls a single cheap native every **30 seconds** by default — negligible overhead (≈0.00003% CPU per call)
+- The loop calls a single cheap native every **25 seconds** by default — negligible overhead (≈0.00004% CPU per call)
 - No per-tick allocations, no table churn, no events fired per frame
 - Server side only prints once at startup
 - No memory leak risk: the loop is a single persistent thread with no growing state

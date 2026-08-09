@@ -16,7 +16,7 @@ Config = {}
     the idle camera can come back, so we re-assert it periodically.
 --]]
 Config.loopEnabled = true    -- 启用周期性循环调用（更可靠）/ Enable periodic loop call (more reliable)
-Config.loopInterval = 25000  -- 循环间隔毫秒 / Loop interval in milliseconds（默认 30 秒）
+Config.loopInterval = 25000  -- 循环间隔毫秒 / Loop interval in milliseconds（默认 25 秒）
 
 -- 首次等待：玩家重生/传送后可能重置状态，首次调用前小延迟更稳妥
 -- Initial wait: give the game a moment to settle before first call
